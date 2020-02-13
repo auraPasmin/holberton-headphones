@@ -1,5 +1,7 @@
-#base_model The mold(idea) class is the parent class.
+""" base_model The mold(idea) class is the parent class."""
+import uuid
+import datetime
 
-class BaseMode:
+class BaseModel:
     def __init__(self):
-    
+        
