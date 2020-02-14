@@ -17,5 +17,10 @@ class BaseModel:
         self.updated_at = datetime.now()
 
     def to_dict(self):
-        """ comentario"""
+        """ to new dict"""
+        to_new_dict = self.__dict__
+        to_new_dict["__class__"] = self.__class__.__name__
+        to_new_dict["created_at"] = self.created_at.isoformat()
+        to_new_dict["updated_at"] = self.updated_at.isoformat()
+        return to_new_dict
     
