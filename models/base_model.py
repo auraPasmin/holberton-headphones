@@ -7,6 +7,10 @@ class BaseModel:
     """class initialization"""
     def __init__(self, *args, **kwargs):
         """ initialization"""
+        if kwargs:
+            
+
+        else:
         self.id = str(uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
