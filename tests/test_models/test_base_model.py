@@ -21,8 +21,7 @@ class TestBaseModel(unittest.TestCase):
         """
             Initializing instance.
         """
-        self.base_model_ = BaseModel()
-        self.base_model_.name = "huguito"
+        self.base_model = BaseModel()
 
     def TearDown(self):
         """
@@ -35,7 +34,7 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsNotNone(models.base_model.__doc__,"Mod does not docstring")
         self.assertIsNotNone(BaseModel.__doc__, "Class does not docstring")
 
-         def test_executable_file(self):
+    def test_executable_file(self):
         """test if file has permissions to execute"""
         # Check if read access
         is_read_true = os.access('models/base_model.py', os.R_OK)
@@ -49,8 +48,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_is_an_instance(self):
         """check if base_model is an instance of BaseModel"""
-        base_model_= BaseModel()
-        self.assertIsInstance(my_model, BaseModel)
+        self.assertIsInstance(self.base_model.__class__, BaseModel)
 
     def test_id(self):
         """test if the id of two instances are different"""
@@ -69,8 +67,8 @@ class TestBaseModel(unittest.TestCase):
     def test_save(self):
         """check if the attribute updated_at (date) is updated for
         the same object with the current date"""
-       base_model_2 = BaseModel()
-        first_updated =base_model_2.updated_at
+        base_model_2 = BaseModel()
+        first_updated = base_model_2.updated_at
         base_model_2.save()
         second_updated = base_model_2.updated_at
         self.assertNotEqual(first_updated, second_updated)
@@ -92,6 +90,3 @@ class TestBaseModel(unittest.TestCase):
                 self.assertIsInstance(value, str)
             if key == 'updated_at':
                 self.assertIsInstance(value, str)
-                
-                if __name__ == '__main__':
-                  unittest.main()
