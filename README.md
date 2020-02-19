@@ -1,18 +1,28 @@
-![](https://camo.githubusercontent.com/9ebbf60e208b031d4dcf7db6ffc19fe0339d0ff3/68747470733a2f2f692e6962622e636f2f64354e38354e682f68626e622e706e67)
+![](https://camo.githubusercontent.com/9ebbf60e208b031d4dcf7db6ffc19fe0339d0ff3/68747470733a2f2f692e6962622e636f2f64354e38354e682f68626e622e706e67)
 
 ## AirBnB_clone 💻
 
-_This is a project to create a simple shell, by the students of Holberton School._
+_The goal of the project is to implement a simple copy of the AirBnB website on your server.
 
-## Synopsis 🚀
+Not all functions will be implemented, just some to cover all the fundamental concepts of 
+the top level programming track.._
 
-_These instructions allow you to obtain a copy of the project from
-"simple-shell" to work on your local machine for development and testing purposes._
+## 🎈 Synopsis 🎈
 
-## What the shell does
+_These instructions allow you to obtain a copy of the "AirBnB_clone" project to work on your 
+local machine for development and testing purposes.
+this is a small step to a big project.._
 
-the shell execute the diferents commands in the PATH
+## What the AirBnB does 🦐
 
+the AirBnB execute the diferents commands in the PATH_
+_You must use the cmd module_
+       _🔴Your class definition should be: class HBNBCommand(cmd.Cmd):
+	🔴the shell must implement:
+	🔴quity EOF to exit the program
+	🔴help (this action is provided by default, cmd but you should keep it updated and documented)
+	🔴a personalized notice: (hbnb)
+	🔴an empty line + ENTER should not execute anything_
 ### Pre-requisites 📋
 
 _To install to use this repository you must first have an environment to use it._
