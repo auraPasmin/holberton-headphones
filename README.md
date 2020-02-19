@@ -15,14 +15,20 @@ this is a small step to a big project.._
 
 ## What the AirBnB does 🦐
 
-the AirBnB execute the diferents commands in the PATH_
+_The AirBnB execute the diferents commands in the PATH_
 _You must use the cmd module_
-       _🔴Your class definition should be: class HBNBCommand(cmd.Cmd):
-	🔴the shell must implement:
-	🔴quity EOF to exit the program
-	🔴help (this action is provided by default, cmd but you should keep it updated and documented)
-	🔴a personalized notice: (hbnb)
-	🔴an empty line + ENTER should not execute anything_
+
+_🔴Your class definition should be: class HBNBCommand(cmd.Cmd):_
+
+_🔴the shell must implement:_
+
+_🔴quity EOF to exit the program_
+
+_🔴help (this action is provided by default, cmd but you should keep it updated and documented)
+a personalized notice: (hbnb)_
+
+_🔴an empty line + ENTER should not execute anything_
+
 ### Pre-requisites 📋
 
 _To install to use this repository you must first have an environment to use it._
