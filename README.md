@@ -40,7 +40,7 @@ EXAMPLE: linux terminal
 
 ### Installation 🔧
 
-_Here I will explain the steps to clone the repository to be able to use and modify the simple shell_
+_Here I will explain the steps to clone the repository to be able to use and modify the AirBnB_clone_
 
 _clone the repository_
 
@@ -54,48 +54,64 @@ _To use the repository you must first enter it with the command_
 $ cd
 ```
 
-## Funtions 🔩
+## Class 🔩
 ```
-int _strncmp(char *s1, char *s2, size_t n);
+class HBNBCommand(cmd.Cmd):
 
-char *_strcat(char *dest, char *src);
+class BaseModel():
 
-int _strlen(char *s);
+class Amenity(BaseModel):
 
-char *_strdup(char *str);
+class City(BaseModel):
 
-void execute(char *av[], char **env);
+class Place(BaseModel):
 
-char *_path(char av[], char *env[]);
+class Review(BaseModel):
 
-int _strcmp(char *s1, char *s2);
+class State(BaseModel):
+
+class User(BaseModel):
+
+class FileStorage:
 ```
 ## They run the tests⚙️
 
 _how to run automated tests for this system_
 
 ```
-$gcc -wall -werror -wextra -pedantic *c -o hsh
+$python3 -m unittest discover tests
 
-$./hsh
+$./console.py
 ```
 ### coding style tests ⌨️
 ```
-_$ gcc -Wall -Werror -Wextra -pedantic *.c -o ./hsh
-$ echo "/bin/ls" | ./hsh_
-or interactive mode
-$ echo "ls" | ./hsh
+## Console :space_invader:
+
+### Usage:
+_The "Console`" works in interactives sesson but also non-interactive mode. To run it in *Non-interactive*_
+
 ```
+$ echo "help" | ./console.py
+(hbnb) 
+Documented commands (type help <topic>):
+========================================
+EOF  all  count  create  destroy  help  quit  show  update
+
+(hbnb) 
+```
+Also, it is possible to create a text file with test cases and pipe the content.
+```
+
 ## Files
 
-**_holberton.h_**
+**base_model**
 
-_This is the the file that contains  all  the  librarys  of  the  proyect.
-This the the file that contains the authors of the proyect._
+_as its name implies is the basis of our project.
+This method will be the first part of the serialization/deserialization process: create a dictionary representation with "simple object type"_
 
-**_prompt.c_**      
+**console.py**      
 
-_This is the file that contains the shell main_
+_This program called console.py which contains the entry shell of the AirBnB _
 
 **_man_1_simple_shell_**
 
@@ -124,20 +140,20 @@ _This  file has the functions that we implement, _strcmp, execute, _path,
 
        [HOLBERTON SCHOOL](https://intranet.hbtn.io/projects/235)proyect  Wiki  y Style [Wiki](https://github.com/holbertonschool/Betty/wiki)
 
-## Authors ✒️
+## Authors ✒️👩🏼‍💻👨🏼‍💻
 
-       _creaters simple-shell project_
+       _creaters AirBnB_Clone project_
 
-       * **Danny Martinez** - *Initial Work* - - *Twitter*-[@dalmariv01](https://twitter.com/dalmariv01) -*github*- [danny009](https://github.com/danny099)
+       * **Hugo Bayona** - *Initial Work* - - *Twitter*-[@dalmariv01](https://twitter.com/BatmanEsFriki) -*github*- [hb4y](https://github.com/hb4y)
        * **Aura Marina Pasmin** - *Initial Work and Documentation* - -*Twitter*- [@MariPasmin](https://twitter.com/Mari_Pasmin) - *github* - [auraPasmin](https://github.com/auraPasmin)
 
 
 
 ## Expressions of Gratitude 🎁
 
-       * Danny I'll invite you a beer🍺
+       * Hugo Thanks for the coffee☕️
        *  We want to thank Holberton School for giving us the great opportunity to work on this, to impart knowledge.🐙.
-       * thanks to this oportunite
+      
 
 
 
